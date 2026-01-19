@@ -1,0 +1,75 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex; /* Enables flexbox layout */
+    justify-content: space-between; /* Space between logo and menu */
+    align-items: center; /* Vertically centers items */
+    padding: 15px 30px;
+    background-color: #333;
+    color: white;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex; /* Makes list items horizontal */
+    list-style: none;
+    gap: 20px; /* Space between menu items */
+}
+
+.nav-links li {
+    cursor: pointer;
+}
+
+/* Main Container */
+.container {
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers cards horizontally */
+    align-items: stretch; /* Makes cards equal height */
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap; /* Allows cards to move to next line on small screens */
+}
+
+/* Cards */
+.card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column; /* Stack navbar items vertically */
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column; /* Vertical menu for mobile */
+        align-items: center;
+    }
+}
