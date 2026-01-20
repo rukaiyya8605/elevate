@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>All Tour Packages - SS Lanka</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand me-5" href="#">
+      <img src="sslanka-logo.png" alt="SS Lanka Logo" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html"><span>Home</span></a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Tour-package.html" data-bs-toggle="dropdown"><span>All Tour Packages</span></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Beach Tour Package</a></li>
+            <li><a class="dropdown-item" href="#">Ramayana Tour Package</a></li>
+            <li><a class="dropdown-item" href="#">Honeymoon Tour Package</a></li>
+            <li><a class="dropdown-item" href="#">Royal Culture Tour Package</a></li>
+            <li><a class="dropdown-item" href="#">Wild Life Tour Package</a></li>
+            <li><a class="dropdown-item" href="#">Wild Life & Adventure Tour</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#"><span>Car Rental</span></a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><span>Destinations</span></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Anuradhapura</a></li>
+            <li><a class="dropdown-item" href="#">Dambulla</a></li>
+            <li><a class="dropdown-item" href="#">Galle</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#"><span>Plan A Tour</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#"><span>Contact Us</span></a></li>
+      </ul>
+    </div>
+    <form class="d-flex ms-auto search-box align-items-center">
+      <input class="form-control search-input" type="search" placeholder="Search tours" />
+      <button class="btn search-btn ms-2" type="submit"><i class="bi bi-search"></i></button>
+    </form>
+  </div>
+</nav>
+
+<div class="container-fluid" style="background-color: red;height:400px;display: flex;align-items: center;justify-content: center; background-image: url(leopard.jpg);background-size: cover;background-repeat: no-repeat; ">
+    <div class="bg-img">
+        <p style="color:white;font-size:30px;">All Tour Packages</p>
+    </div>
+</div>
+
+
+<footer class="footer-section mt-5">
+  <div class="container py-5">
+    <div class="row text-light">
+      <div class="col-md-4 mb-4">
+        <h6 class="footer-heading">GET UPDATES & MORE</h6>
+        <p>Subscribe to the free newsletter</p>
+        <form class="d-flex" onsubmit="event.preventDefault(); alert('Subscribed!');">
+          <input type="email" placeholder="Your email" class="form-control me-2" required />
+          <button type="submit" class="btn btn-dark">&rarr; Subscribe</button>
+        </form>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h6 class="footer-heading">CUSTOMER SUPPORT</h6>
+        <p>Get in touch</p>
+        <p><i class="bi bi-telephone-fill"></i> <strong>+94 760 147 117</strong></p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h6 class="footer-heading">FOLLOW US</h6>
+        <div class="d-flex align-items-center">
+          <a href="#" class="social-icon me-3"><i class="bi bi-facebook fs-3 text-light"></i></a>
+          <a href="#" class="social-icon me-3"><i class="bi bi-youtube fs-3 text-light"></i></a>
+          <a href="#" class="social-icon me-3"><i class="bi bi-instagram fs-3 text-light"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom text-center py-3 text-light bg-dark">
+    Copyright &copy; 2024 SS Lanka. All Rights Reserved.  
+    <a href="#" class="text-orange text-decoration-none">Privacy Policy</a> &nbsp; | &nbsp; Developed By
+    <a href="#" class="text-orange text-decoration-none">VEx</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

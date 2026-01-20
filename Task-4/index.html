@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Travel demo</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+
+    <a class="navbar-brand me-5" href="#">
+      <img src="sslanka-logo.png" alt="SS Lanka Logo" />
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html"><span>Home</span></a></li>
+
+<li class="nav-item dropdown d-flex align-items-center">
+  <a class="nav-link me-1" href="Tour-package.html">
+    All Tour Packages
+  </a>
+  <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="Tour-package.html">Beach Tour Package</a></li>
+    <li><a class="dropdown-item" href="#">Ramayana Tour Package</a></li>
+    <li><a class="dropdown-item" href="#">Honeymoon Tour Package</a></li>
+    <li><a class="dropdown-item" href="#">Royal Culture Tour Package</a></li>
+    <li><a class="dropdown-item" href="#">Wild Life Tour Package</a></li>
+    <li><a class="dropdown-item" href="#">Wild Life & Adventure Tour</a></li>
+  </ul>
+</li>
+
+
+
+        <li class="nav-item"><a class="nav-link" href="#"><span>Car Rental</span></a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            <span>Destinations</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Anuradhapura</a></li>
+            <li><a class="dropdown-item" href="#">Dambulla</a></li>
+            <li><a class="dropdown-item" href="#">Galle</a></li>
+            <li><a class="dropdown-item" href="#">Hikkaduwa</a></li>
+            <li><a class="dropdown-item" href="#">Kandy</a></li>
+            <li><a class="dropdown-item" href="#">Negombo</a></li>
+            <li><a class="dropdown-item" href="#">Nuwara Eliya</a></li>
+            <li><a class="dropdown-item" href="#">Polonnaruwa</a></li>
+            <li><a class="dropdown-item" href="#">Yala</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="#"><span>Plan A Tour</span></a></li>
+
+        <li class="nav-item"><a class="nav-link" href="#"><span>Contact Us</span></a></li>
+      </ul>
+    </div>
+
+    <form class="d-flex ms-auto search-box align-items-center">
+      <input class="form-control search-input" type="search" placeholder="Search tours" />
+      <button class="btn search-btn ms-2" type="submit">
+        <i class="bi bi-search"></i>
+      </button>
+    </form>
+  </div>
+</nav>
+
+<div
+  id="heroCarousel"
+  class="carousel slide carousel-fade"
+  data-bs-ride="carousel"
+  data-bs-interval="2000"
+>
+  <div class="carousel-inner">
+    <div
+      class="carousel-item active"
+      style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80'); height: 89vh; background-size: cover; background-position: center;"
+    >
+      <div class="carousel-caption text-center">
+        <h1>WELCOME TO SS LANKA TOURS</h1>
+        <p>Discover amazing places at exclusive deals</p>
+      </div>
+    </div>
+
+    <div
+      class="carousel-item"
+      style="background-image: url('https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1470&q=80'); height: 89vh; background-size: cover; background-position: center;"
+    >
+      <div class="carousel-caption text-center">
+        <h1>EXPLORE SRI LANKA</h1>
+        <p>Adventure, Nature & Culture combined</p>
+      </div>
+    </div>
+
+    <div
+      class="carousel-item"
+      style="background-image: url('https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1470&q=80'); height: 89vh; background-size: cover; background-position: center;"
+    >
+      <div class="carousel-caption text-center">
+        <h1>BOOK YOUR DREAM TOUR</h1>
+        <p>Exclusive offers just for you</p>
+      </div>
+    </div>
+
+    <div
+      class="carousel-item"
+      style="background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1470&q=80'); height: 89vh; background-size: cover; background-position: center;"
+    >
+      <div class="carousel-caption text-center">
+        <h1>DISCOVER BEAUTIFUL BEACHES</h1>
+        <p>Sun, sand and serenity</p>
+      </div>
+    </div>
+
+    <div
+      class="carousel-item"
+      style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1470&q=80'); height: 80vh; background-size: cover; background-position: center;"
+    >
+      <div class="carousel-caption text-center">
+        <h1>EMBRACE THE WILD</h1>
+        <p>Explore Sri Lanka’s wildlife treasures</p>
+      </div>
+    </div>
+  </div>
+
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#heroCarousel"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#heroCarousel"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="container mt-5">
+
+<div class="ss-tour-packages-component">
+  <h3>Choose your</h3>
+  <h1>Tour Package</h1>
+
+  <div class="ss-tour-circle-container">
+    <div class="ss-tour-circle-item" title="Beach Tour Package">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80" alt="Beach" />
+      <span>Beach Tour</span>
+    </div>
+    <div class="ss-tour-circle-item" title="Honeymoon Tour Package">
+      <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=400&q=80" alt="Honeymoon" />
+      <span>Honeymoon</span>
+    </div>
+    <div class="ss-tour-circle-item" title="Wildlife Tour Package">
+      <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=400&q=80" alt="Wildlife" />
+      <span>Wildlife Tour</span>
+    </div>
+    <div class="ss-tour-circle-item" title="Culture Tour Package">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Culture" />
+      <span>Culture Tour</span>
+    </div>
+    <div class="ss-tour-circle-item" title="Adventure Tour Package">
+      <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=400&q=80" alt="Adventure" />
+      <span>Adventure Tour</span>
+    </div>
+  </div>
+</div>
+
+  <div class="card-grid row g-4 mt-5">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Beach" />
+        <div class="card-body">
+          <h5 class="card-title">Beach Paradise</h5>
+          <p class="card-text">Sun, sand, and waves for your perfect vacation.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Honeymoon" />
+        <div class="card-body">
+          <h5 class="card-title">Romantic Honeymoon</h5>
+          <p class="card-text">Experience an unforgettable romantic getaway.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Ramayana" />
+        <div class="card-body">
+          <h5 class="card-title">Ramayana Pilgrimage</h5>
+          <p class="card-text">Explore ancient temples and sacred sites.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer-section">
+  <div class="container py-5">
+    <div class="row text-light">
+
+      <div class="col-md-4 mb-4">
+        <h6 class="footer-heading">GET UPDATES & MORE</h6>
+        <p>Subscribe to the free newsletter</p>
+        <form class="d-flex" onsubmit="event.preventDefault(); alert('Subscribed!');">
+          <input
+            type="email"
+            placeholder="Your email"
+            class="form-control me-2"
+            required
+          />
+          <button type="submit" class="btn btn-dark">
+            &rarr; Subscribe
+          </button>
+        </form>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h6 class="footer-heading">CUSTOMER SUPPORT</h6>
+        <p>Get in touch</p>
+        <p><i class="bi bi-telephone-fill"></i> <strong>+94 760 147 117</strong></p>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h6 class="footer-heading">FOLLOW US</h6>
+        <div class="d-flex align-items-center">
+          <a
+            href="https://www.facebook.com/sslanka"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            class="social-icon me-3"
+            ><i class="bi bi-facebook fs-3 text-light"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/sslanka"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="YouTube"
+            class="social-icon me-3"
+            ><i class="bi bi-youtube fs-3 text-light"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/sslanka"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            class="social-icon me-3"
+            ><i class="bi bi-instagram fs-3 text-light"></i
+          ></a>
+          <a
+            href="https://www.tripadvisor.com/sslanka"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="TripAdvisor"
+            class="social-icon"
+          >
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom text-center py-3 text-light bg-dark">
+    Copyright &copy; 2024 SS Lanka. All Rights Reserved.  
+    <a href="#" class="text-orange text-decoration-none">Privacy Policy</a> &nbsp; | &nbsp; Developed By
+    <a href="#" class="text-orange text-decoration-none">VEx</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
