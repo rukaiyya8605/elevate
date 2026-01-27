@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #ccc;
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-area {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#task-input {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+#add-btn {
+  padding: 10px 20px;
+  background: #007bff;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  transition: background 0.3s ease;
+}
+
+#add-btn:hover {
+  background: #0056b3;
+}
+
+#task-list {
+  list-style: none;
+  padding-left: 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+#task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fafafa;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+#task-list li.completed span {
+  text-decoration: line-through;
+  color: #999;
+}
+
+#task-list li span {
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+.action-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 1rem;
+  color: #ff4d4f;
+  font-weight: bold;
+}
+
+.action-btn:hover {
+  color: #d9363e;
+}
